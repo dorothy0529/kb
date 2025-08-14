@@ -39,25 +39,16 @@ st.markdown(
 st.markdown(
     """
     <style>
-    /* Streamlit 기본 버튼 스타일 변경 */
+    /* 버튼 기본 스타일: 흰 배경 + 회색 테두리 */
     div.stButton > button {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid #ddd !important;
     }
 
-    /* 마우스 오버 시 */
+    /* 마우스 오버 시: 테두리만 검정색 */
     div.stButton > button:hover {
-        background-color: #f0f0f0;
-        color: black;
-        border: 1px solid black;
-    }
-
-    /* 클릭(활성) 시 */
-    div.stButton > button:active {
-        background-color: black !important;
-        color: white !important;
-        border: 1px solid black;
+        border: 1px solid black !important;
     }
     </style>
     """,
