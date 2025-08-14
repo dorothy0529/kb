@@ -5,7 +5,25 @@ import time
 from datetime import datetime
 
 st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon="💳", layout="centered")
-
+# 배경색 및 주요 컬러 적용
+st.markdown(
+    """
+    <style>
+    body, .stApp {
+        background-color: #f5b800 !important;
+    }
+    .stButton>button, .stTextInput>div>input, .stNumberInput>div>input, .stCheckbox>label {
+        background-color: #FFFFFF !important;
+        color: #222 !important;
+    }
+    .stForm, .stFormContainer, .st-cb, .st-cg {
+        background-color: #FFFFFF !important;
+        border-radius: 12px;
+        padding: 1em;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
 # ---------------------------
 # 유틸: 세션 상태 초기화
 # ---------------------------
