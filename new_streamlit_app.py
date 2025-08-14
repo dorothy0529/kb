@@ -5,7 +5,18 @@ import time
 from datetime import datetime
 
 st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon="💳", layout="centered")
-# 배경색 및 주요 컬러 적용
+st.markdown(
+    """
+    <style>
+    * {
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+#배경색 및 주요 컬러 적용
 st.markdown(
     """
     <style>
