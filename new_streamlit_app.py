@@ -4,7 +4,7 @@ import random
 import time
 from datetime import datetime
 
-st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon="💳", layout="centered")
+st.set_page_config(page_title="KB AI Adaptive PayShield - Web Prototype", page_icon="💳", layout="centered")
 st.markdown(
     """
     <style>
