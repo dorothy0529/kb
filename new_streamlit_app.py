@@ -45,6 +45,16 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown(
+    """
+    <style>
+    * {
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #배경색 및 주요 컬러 적용
 st.markdown(
