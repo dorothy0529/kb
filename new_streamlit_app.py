@@ -8,6 +8,25 @@ st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon
 st.markdown(
     """
     <style>
+    /* 모든 입력창(숫자, 텍스트) 스타일 변경 */
+    input, textarea {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* Streamlit의 기본 input wrapper에도 적용 */
+    div[data-baseweb="input"] input {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <style>
     * {
         color: black !important;
     }
