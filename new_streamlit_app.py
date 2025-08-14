@@ -94,6 +94,40 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown(
+    """
+    <style>
+    /* 선택창 자체 배경 흰색 */
+    div[data-baseweb="select"] {
+        background-color: white !important;
+        color: black !important;
+    }
+    div[data-baseweb="select"] * {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* 드롭다운 옵션 목록 */
+    ul[role="listbox"] {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* 각 옵션 */
+    ul[role="listbox"] li {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* 옵션 hover 시 배경 */
+    ul[role="listbox"] li:hover {
+        background-color: #f0f0f0 !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ---------------------------
 # 유틸: 세션 상태 초기화
