@@ -36,6 +36,34 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.markdown(
+    """
+    <style>
+    /* Streamlit 기본 버튼 스타일 변경 */
+    div.stButton > button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    /* 마우스 오버 시 */
+    div.stButton > button:hover {
+        background-color: #f0f0f0;
+        color: black;
+        border: 1px solid black;
+    }
+
+    /* 클릭(활성) 시 */
+    div.stButton > button:active {
+        background-color: black !important;
+        color: white !important;
+        border: 1px solid black;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ---------------------------
 # 유틸: 세션 상태 초기화
 # ---------------------------
