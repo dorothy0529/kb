@@ -8,54 +8,38 @@ st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon
 st.markdown(
     """
     <style>
-    /* 일반 버튼 스타일 (흰 배경, 검정 글씨) */
-    div.stButton > button {
+    /* ====== 모든 버튼류 흰색 배경 + 검정 글씨 ====== */
+    button, div.stButton > button, div[data-baseweb="button"] {
         background-color: white !important;
         color: black !important;
         border: 1px solid black !important;
     }
 
-    /* 숫자 입력창의 +, - 버튼 스타일 */
-    div[data-baseweb="input"] button {
-        background-color: white !important;
-        color: black !important;
-        border: 1px solid black !important;
-    }
-
-    /* 마우스 오버 시 버튼 테두리만 강조 */
-    div.stButton > button:hover,
-    div[data-baseweb="input"] button:hover {
-        border: 1px solid black !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    """
-    <style>
-    /* 모든 입력창(숫자, 텍스트) 스타일 변경 */
-    input, textarea {
+    /* ====== 모든 입력창 흰색 배경 + 검정 글씨 ====== */
+    input, textarea, select {
         background-color: white !important;
         color: black !important;
     }
 
-    /* Streamlit의 기본 input wrapper에도 적용 */
+    /* Streamlit의 input wrapper */
     div[data-baseweb="input"] input {
         background-color: white !important;
         color: black !important;
     }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-st.markdown(
-    """
-    <style>
-    * {
+    /* ====== Selectbox / Multiselect 드롭다운 ====== */
+    div[data-baseweb="select"] {
+        background-color: white !important;
         color: black !important;
+    }
+    div[data-baseweb="select"] * {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* ====== Hover 시 테두리만 검정색 ====== */
+    button:hover, div.stButton > button:hover, div[data-baseweb="button"]:hover {
+        border: 1px solid black !important;
     }
     </style>
     """,
