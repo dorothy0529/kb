@@ -8,6 +8,33 @@ st.set_page_config(page_title="AI Adaptive PayShield - Web Prototype", page_icon
 st.markdown(
     """
     <style>
+    /* 일반 버튼 스타일 (흰 배경, 검정 글씨) */
+    div.stButton > button {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid black !important;
+    }
+
+    /* 숫자 입력창의 +, - 버튼 스타일 */
+    div[data-baseweb="input"] button {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid black !important;
+    }
+
+    /* 마우스 오버 시 버튼 테두리만 강조 */
+    div.stButton > button:hover,
+    div[data-baseweb="input"] button:hover {
+        border: 1px solid black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <style>
     /* 모든 입력창(숫자, 텍스트) 스타일 변경 */
     input, textarea {
         background-color: white !important;
